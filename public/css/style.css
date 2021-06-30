@@ -1,0 +1,400 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+footer {
+    background-color: #ffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.8rem;
+    font-weight: 550;
+}
+
+h3 {
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+h4 {
+    font-size: 16px;
+    color: #666;
+}
+
+main section article .fas {
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+article img {
+    width: 100%;
+}
+
+nav {
+    display: none;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* cuerpo ventas */
+
+.precios {
+    font-size: 18px;
+    color: #666;
+    width: 45%;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    width: 45%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.menu-burger {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.btn-burger {
+    font-size: 25px;
+    background-color: #1259c3;
+    color: #ffff;
+    padding: 5px 10px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.font-card,
+.font-gift,
+.font-user {
+    font-size: 2em;
+    color: #1259c3;
+}
+
+.footer-article {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+}
+
+.footer-article h4,
+.footer-article p {
+    margin: 0px;
+}
+
+
+/* Articulo */
+
+.main-article {
+    /* padding: 10px; */
+    margin: 10px;
+    background-color: #ffff;
+    transition: all, 450ms;
+}
+
+.div-article {
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+}
+
+.div-article p,
+.div-article h4 {
+    padding-top: 10px;
+}
+
+.descripcion {
+    visibility: hidden;
+}
+
+.main-article:hover .descripcion {
+    visibility: visible;
+}
+
+.footer-section {
+    width: 100%;
+}
+
+.main-article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.main-article:hover .fas {
+    animation-name: auto;
+    animation-duration: 1s;
+}
+
+@keyframes auto {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+
+/* header */
+
+.head .logo img {
+    width: 100%;
+}
+
+.head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 45%;
+}
+
+.busquedas {
+    /* margin-top: 12px; */
+    width: 45%;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(254, 254, 254);
+}
+
+.busquedas input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.busquedas button {
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    padding: 5px;
+}
+
+.busquedas button i {
+    color: rgba(102, 102, 102, 0.661);
+}
+
+.busquedas button i::before {
+    border-left: 1px solid rgba(102, 102, 102, 0.661);
+    padding-left: 5px;
+}
+
+.text-center {
+    width: 100%;
+    color: #666;
+    font-size: 0.8rem;
+    font-weight: 550;
+}
+
+
+/* formulari */
+
+.main-form {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+}
+
+.form {
+    width: 100%;
+    padding: 15px;
+}
+
+.form-item {
+    margin-bottom: 10px;
+}
+
+.form-item input[type="text"],
+.form-item input[type="date"],
+.form-item input[type="password"],
+.form-item input[type="email"],
+.form-item input[type="file"],
+.form-item textarea {
+    border: none;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-item input[type="radio"],
+.form-item input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-btn .btn {
+    width: 49%;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: #fff;
+    transition: background-color, 500ms;
+}
+
+.btn-unique {
+    width: 100%;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: #fff;
+    transition: background-color, 500ms;
+}
+
+.btn:hover {
+    background-color: #0022AA;
+}
+
+.btn-unique:hover {
+    background-color: #0022AA;
+}
+
+.form-label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+
+/* tablets */
+
+@media (min-width: 461px) {
+    section {
+        justify-content: space-around;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
+    nav {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        /* background-color: red; */
+        padding: 15px 10px;
+    }
+    .menu-burger {
+        display: none;
+    }
+    .logo {
+        /* margin-top: 12px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        margin-right: 10px; */
+        width: 35%;
+    }
+    .busquedas {
+        /* margin-top: 12px;
+        background-color: black; */
+        width: 25%;
+    }
+    .text-center {
+        width: 35%;
+    }
+    /* Formulario */
+    .form {
+        width: 70%;
+        margin: 0px auto;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer section {
+        width: 45%;
+    }
+}
+
+
+/* desktop */
+
+@media (min-width: 769px) {
+    main section article {
+        width: 20%;
+    }
+    .div-article .precios {
+        width: 52%;
+    }
+    .div-article .descuentos {
+        width: 48%;
+    }
+    .busquedas {
+        /* margin-top: 12px;
+        background-color: black; */
+        width: 35%;
+    }
+    .text-center {
+        margin-top: 12px;
+        width: 25%;
+    }
+    footer section {
+        width: 25%;
+    }
+}
